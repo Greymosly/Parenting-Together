@@ -1,0 +1,20 @@
+.homepage {
+  display: grid;
+  justify-content: space-around;
+
+  &__img {
+    img {
+      height: auto;
+      max-width: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-top: 30px;
+    }
+  }
+  &__text {
+    margin: 30px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 1.3;
+  }
+}
