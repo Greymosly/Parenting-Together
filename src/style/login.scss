@@ -1,22 +1,75 @@
-.login-link-wrapper {
-  margin-top: 30px;
-  padding: 20px;
+.login-page-wrapper {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 30px;
+  height: 100vh;
+  width: 100vw;
+
+  &__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__right {
+    background-size: cover;
+  }
+}
+
+.auth-wrapper {
+  display: grid;
   grid-gap: 10px;
 
-  &__link {
-    button {
-      background-color: $dark-teal;
-      width: 15%;
-      border: none;
-      border-radius: 8px;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
+  &__input {
+    display: flex;
+    input {
+      font-family: "Montserrat", sans-serif;
+      color: #808080;
+      padding: 5px 0px;
+      width: 100%;
+      border-top: 0px;
+      border-right: 0px;
+      border-left: 0px;
+      border-bottom: 1px solid $teal;
+      background-color: transparent;
+      transition: 0.5s all ease-in-out;
+      font-size: 2.1em;
+      margin-bottom: 21px;
+
+      &:focus {
+        outline: none;
+        border-bottom: 1px solid $dark-teal;
+      }
+      
     }
+  }
+
+  h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  button {
+    background-color: $dark-teal;
+    width: auto;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.auth-wrapper {
+  svg {
+    display: flex;
+    font-size: 30px;
+    color: $teal;
+    margin-right: 15px;    
   }
 }

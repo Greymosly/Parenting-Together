@@ -1,27 +1,35 @@
 html {
-    font-size: 62.5%;
-  }
-  
-  *,
-  *::after,
-  *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-  }
-  
-  body {
-    font-family: 'Montserrat', sans-serif;
-    color: #808080;
-  
-    // -webkit-font-smoothing: antialiased;
-    // -moz-osx-font-smooting: grayscale;
-    // text-rendering: optimizeLegibility;
-    // -webkit-tap-highlight-color: transparent;
-  }
+  font-size: 62.5%;
+}
 
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
 
-@import './variables.scss';
-@import './navbar/navbar.scss';
-@import './homepage.scss';
-@import './login.scss';
+body {
+  margin: 0px;
+  font-family: "Montserrat", sans-serif;
+  color: #808080;
+
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smooting: grayscale;
+  // text-rendering: optimizeLegibility;
+  // -webkit-tap-highlight-color: transparent;
+}
+
+@import "./variables.scss";
+@import "./navbar/navbar.scss";
+@import "./homepage.scss";
+@import "./login.scss";
+@import "./pictures.scss";
+@import "./no-match.scss";
+
+.calendar-wrapper__calendar-item {
+  .css-1uqnjl3-Calendar {
+    border: none;
+  }
+}

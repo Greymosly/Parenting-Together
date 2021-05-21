@@ -1,0 +1,20 @@
+.sliderimg{
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+    margin-top: 20px;
+  }
+
+
+.alice-carousel__dots-item__active {
+    background-color: $teal;
+}
+
+.alice-carousel__prev-btn-item, .alice-carousel__next-btn-item {
+    color: teal;
+    font-size: 30px;
+    font-weight: 900;
+    &:hover {
+        color: mediumaquamarine;
+    }
+}

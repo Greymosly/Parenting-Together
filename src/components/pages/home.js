@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Navbar from "../heardernavbar/navbar";
 
 import homeImage from "../../../static/assets/Images/Imogene/Banner2.png";
 
@@ -10,7 +9,6 @@ export default class Home extends Component {
   render() {
     return (
       <div className="homepage">
-        <Navbar />
         <div className="homepage__img">
           <img src={homeImage} />
         </div>
